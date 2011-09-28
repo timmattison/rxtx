@@ -71,7 +71,7 @@ final class Raw  extends  RawPort {
 
 	static 
 	{
-		System.loadLibrary( "rxtxRaw" );
+		//System.loadLibrary( "rxtxRaw" );
 		Initialize();
 	}
 

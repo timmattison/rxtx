@@ -71,7 +71,7 @@ final class LPRPort extends ParallelPort
 {
 
 	static {
-		System.loadLibrary( "rxtxParallel" );
+		//System.loadLibrary( "rxtxParallel" );
 		Initialize();
 	}
 
