@@ -5096,9 +5096,9 @@ void throw_java_exception( JNIEnv *env, char *exc, char *foo, char *msg )
 void report_warning(char *msg)
 {
 #ifndef DEBUG_MW
-	fprintf(stderr, msg);
+	//fprintf(stderr, msg);
 #else
-	mexWarnMsgTxt( (const char *) msg );
+	//mexWarnMsgTxt( (const char *) msg );
 #endif /* DEBUG_MW */
 }
 
@@ -5115,9 +5115,9 @@ void report_verbose(char *msg)
 {
 #ifdef DEBUG_VERBOSE
 #ifdef DEBUG_MW
-	mexErrMsgTxt( msg );
+	//mexErrMsgTxt( msg );
 #else
-	fprintf(stderr, msg);
+	//fprintf(stderr, msg);
 #endif /* DEBUG_MW */
 #endif /* DEBUG_VERBOSE */
 }
@@ -5133,9 +5133,9 @@ void report_verbose(char *msg)
 void report_error(char *msg)
 {
 #ifndef DEBUG_MW
-	fprintf(stderr, msg);
+	//fprintf(stderr, msg);
 #else
-	mexWarnMsgTxt( msg );
+	//mexWarnMsgTxt( msg );
 #endif /* DEBUG_MW */
 }
 
@@ -5152,9 +5152,9 @@ void report(char *msg)
 {
 #ifdef DEBUG
 #	ifndef DEBUG_MW
-		fprintf(stderr, msg);
+		//fprintf(stderr, msg);
 #	else
-		mexPrintf( msg );
+		//mexPrintf( msg );
 #	endif /* DEBUG_MW */
 #endif /* DEBUG */
 }
